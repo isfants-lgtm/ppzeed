@@ -1,0 +1,19 @@
+name: PPZeed
+version: '1.0.0'
+main: com.zeed.ppzeed.PPZeed
+api-version: '1.21'
+description: Itens de troll em PvP - Anti Elytra, Trap de Teia e Confusao.
+author: Fantazeed
+
+commands:
+  ppzeed:
+    description: Abre o menu de itens do PPZeed.
+    usage: /ppzeed [reload]
+
+permissions:
+  ppzeed.menu:
+    description: Permite abrir o menu /ppzeed e pegar os itens.
+    default: op
+  ppzeed.admin:
+    description: Permite usar /ppzeed reload.
+    default: op

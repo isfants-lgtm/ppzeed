@@ -1,0 +1,69 @@
+# PPZeed - configuracao (autor: Fantazeed)
+# Use & para cores. Depois de editar, use /ppzeed reload.
+
+# true = o item NAO causa o dano normal da pancada (so aplica o efeito)
+cancelar-dano-dos-itens: false
+
+menu:
+  titulo: "&8Menu PPZeed"
+
+itens:
+  anti-elytra:
+    # Item que voce segura (qualquer material de item do Minecraft)
+    material: FEATHER
+    nome: "&b&lAnti Elytra"
+    lore:
+      - "&7Bata em um jogador para remover"
+      - "&7a elytra dele por um tempo."
+    # Quanto tempo o alvo fica sem elytra (segundos)
+    duracao-segundos: 15
+    # true = gasta 1 item a cada uso com sucesso
+    consumir: false
+
+  trap-teia:
+    material: BONE
+    nome: "&f&lTrap de Teia"
+    lore:
+      - "&7Bata em um jogador para criar uma"
+      - "&7teia 3x3 nos pes dele."
+    duracao-segundos: 15
+    # Raio da teia: 1 = 3x3, 2 = 5x5, 3 = 7x7
+    raio: 1
+    # true = a teia nao pode ser quebrada enquanto o trap estiver ativo
+    proteger-teia: true
+    consumir: false
+
+  confusao:
+    material: ENDER_EYE
+    nome: "&d&lConfusao"
+    lore:
+      - "&7Bata em um jogador para trocar o item"
+      - "&7da mao dele com outro do inventario."
+    # true = tambem troca com itens da hotbar (slots 1-9)
+    incluir-hotbar: true
+    consumir: false
+
+mensagens:
+  prefixo: "&8[&bPPZeed&8] &r"
+  sem-permissao: "&cVoce nao tem permissao para isso."
+  apenas-jogadores: "&cApenas jogadores podem usar este comando."
+  recarregado: "&aConfiguracao recarregada!"
+  item-recebido: "&aVoce pegou o item &f{item}&a."
+  menu-clique: "&eClique para pegar"
+
+  anti-elytra-aplicado: "&aVoce removeu a elytra de &e{jogador}&a por &e{segundos}s&a!"
+  anti-elytra-alvo: "&cSua elytra foi removida por &e{segundos}s&c!"
+  anti-elytra-ja-ativo: "&c{jogador} ja esta sem elytra."
+  elytra-voltou: "&aSua elytra voltou!"
+  anti-elytra-acabou: "&aVoce ja pode usar elytra de novo."
+  voar-bloqueado: "&cVoce nao pode usar elytra agora!"
+
+  teia-aplicada: "&aVoce prendeu &e{jogador}&a na teia por &e{segundos}s&a!"
+  teia-alvo: "&cVoce foi preso na teia por &e{segundos}s&c!"
+  teia-ja-ativa: "&c{jogador} ja esta preso na teia."
+  teia-sem-espaco: "&cNao ha espaco para criar a teia ai."
+  teia-sumiu: "&aA teia desapareceu."
+
+  confusao-aplicada: "&aVoce confundiu &e{jogador}&a!"
+  confusao-alvo: "&dSeus itens foram trocados!"
+  confusao-sem-itens: "&c{jogador} nao tem outros itens para trocar."
